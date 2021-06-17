@@ -22,7 +22,7 @@ def getSearchResults(keyword, pageCount=1):
         content = driver.page_source
 
         # parsing page source content using beautifulsoup
-        # here we are using "lxml" parser, we can also use "html.parser" instead
+        # here we are using "lxml" parser, we can also use "html.parser" 
         soup = BeautifulSoup(content, "lxml")
 
         # finding all div tags in which "data-asin" attribute is Present
